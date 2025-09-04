@@ -16,5 +16,5 @@ Contents
 
 .. toctree::
 
-   usage
+
    soccerdonna_scraper
