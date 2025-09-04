@@ -1,0 +1,10 @@
+# WSL Scraper
+
+Python package to scrape Kvindeliga 2024-2025 player data from Soccerdonna.
+
+## Installation
+
+Install directly from GitHub:
+
+```bash
+pip install git+https://github.com/yourusername/wsl_scraper.git
