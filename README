@@ -1,10 +1,34 @@
-# WSL Scraper
+**Soccerdonna Scraper** is a Python package and command-line tool for scraping player data from any soccer league on [Soccerdonna](https://www.soccerdonna.de). It supports specifying the league and competition code dynamically, making it flexible for multiple leagues and seasons.
 
-Python package to scrape Kvindeliga 2024-2025 player data from Soccerdonna.
+---
+
+## Features
+
+- Scrape all clubs in a given league.
+- Collect all player profiles, including personal and career information.
+- Export results to Excel (`.xlsx` format).
+- Works both as a Python package and as a command-line tool.
+- Installable directly from GitHub — no PyPI upload required.
+
 
 ## Installation
 
 Install directly from GitHub:
 
 ```bash
-pip install git+https://github.com/yourusername/wsl_scraper.git
+pip install git+https://github.com/marclamberts/soccerdonna_scraper.git
+
+## Usage
+
+from soccerdonna_scraper import run_scraper
+
+# Scrape Women's Super League (ENG1)
+run_scraper("womens-super-league", "ENG1", output_file="WSL_ENG1_players.xlsx")
+
+Be polite: the scraper includes small delays to avoid overloading the Soccerdonna website.
+
+The scraper depends on Soccerdonna's HTML structure; if it changes, the scraper may need updating.
+
+Use responsibly and respect website terms of use.
+
+
