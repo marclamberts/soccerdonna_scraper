@@ -1,11 +1,11 @@
-Welcome to documentations for every model of Waltzing Analytics!
+Welcome to WA-Models documentation!
 ===================================
 
-**WA-Models** is a collection Python libraries for data enthousiast with focus on football/soccer,
-basketball, AFL and Ice hockey.
+WA-Models is a collection of Python libraries for data enthusiasts, 
+with a focus on football/soccer, basketball, AFL, and ice hockey.
 
-Check out the :doc:`soccerdonna_scraper` section for further information, including
-how to :ref:`installation` the project.
+Check out the :doc:`soccerdonna_scraper` section for further information, 
+including how to :ref:`installation` the project.
 
 .. note::
 
@@ -15,6 +15,7 @@ Contents
 --------
 
 .. toctree::
-
+   :maxdepth: 2
+   :caption: Available Modules
 
    soccerdonna_scraper
