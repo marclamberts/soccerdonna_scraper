@@ -102,13 +102,44 @@ The output Excel file contains one row per player with fields such as:
 API Reference
 -------------
 
+Below are the main functions available in ``soccerdonna_scraper``:
+
 .. autosummary::
    :toctree: generated
    :recursive:
 
-   soccerdonna_scraper
+   soccerdonna_scraper.run_scraper
+   soccerdonna_scraper.scraper.get_club_urls
+   soccerdonna_scraper.scraper.get_player_urls
+   soccerdonna_scraper.scraper.scrape_player_profile
 
 ---
+
+Function Overview
+-----------------
+
+### ``run_scraper(league_code: str, comp_code: str, output_file: str = None)``
+
+High-level entry point. Scrapes all clubs and players for the given league
+and competition code, saving results to an Excel file.
+
+---
+
+### ``get_club_urls(league_code: str, comp_code: str)``
+
+Scrapes the competition page to retrieve all club profile URLs and IDs.
+
+Returns:
+    ``dict`` mapping ``club_name -> club_url``.
+
+---
+
+### ``get_player_urls(club_url: str)``
+
+Scrapes the given club page and returns a list of all player profile URLs.
+
+Returns:
+    ``list`` of player profile URLs.
 
 Notes
 -----
